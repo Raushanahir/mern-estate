@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
+import userRouter from "./routes/user.route.js";
 
 mongoose
   .connect(process.env.MONGO)
@@ -19,3 +20,5 @@ app.listen(3000, () => {
 });
 
 // export default app;
+
+app.use('/api/user', userRouter);
