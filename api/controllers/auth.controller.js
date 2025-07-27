@@ -1,4 +1,4 @@
-import { FcNext } from "react-icons/fc";
+// import { FcNext } from "react-icons/fc";
 import User from "../models/user.model.js";
 import bcryptjs from "bcryptjs";
 import { errorHandler } from "../utils/error.js";
